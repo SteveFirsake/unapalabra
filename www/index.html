@@ -39,21 +39,52 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
     <title>Hello World</title>
 </head>
 
 <body>
     <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
+        
+		
+        
+		
+		<div data-role="page">
+ 
+    <div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true">
+        <h1>PhoneCon</h1>
+    </div>
+    <div class="wrapper">
+        <ul data-role="listview" data-inset="true">
+            <li data-icon="plus"><a href="add.html">Add New Contact</a>
+            </li>
+            <li data-icon="search"><a href="find.html">Find Contact</a>
+            </li>
+        </ul>
+    </div>
+	
+	<div id="deviceready" class="blink">
             <p class="event listening">Connecting to Device</p>
             <p class="event received">Device is Ready</p>
         </div>
+	
+	
+    <div data-role="footer" data-position="fixed">
+        <h1>All Rights Reserved</h1>
+    </div>
+ 
+    </div>
+		
+		
+		
+		
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript">
+        //app.initialize();
     </script>
 </body>
 
